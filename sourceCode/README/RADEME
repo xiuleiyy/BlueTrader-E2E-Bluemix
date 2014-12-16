@@ -1,0 +1,47 @@
+
+1. From Cloud Explorer view, create a derby instance, named tradelite, Then drag this datasource to your TradeLite > Cloud Resource folder.
+2. Add third party libraryes   com.ibm.json_1.0.1.jar; derbyclient.jar(if you are using system variable way to connect to derby), you can get them 
+from /WebContent/tradelite_library
+3. Launch Tradelite from overview page or right click project select run as ......
+4. Now you can access Tradelite from http://localhost:port/<context-root>
+5. If you are the first time to run tradelite, you need to do below actions from Tradelite home page: 
+   Configuration > Create Trade Tables 
+
+
+
+Important before you are running with tradelite.
+-------------------------------------------------------------------  
+Two ways to run this application 
+1. JNDI
+2. System variable
+
+You can set TradeDirec.jave (private static boolean Data_Source):
+	// Data_Source = true, run with JNDI, datasource.
+    // Data_Source = false, run with system var.
+	private static boolean Data_Source = true;
+	
+	//If the applicaiton running with system var, set below value to decide which type of db used.
+	//Note:1. The below three values will be take effect once set Data_Source to false.
+	//     2. Just one of below there types could be set to true at one time.
+	private static boolean isMysql_systemVar = true;
+	private static boolean isDB2_systemVar = false;
+	private static boolean isDerby_systemVar = false;
+
+--------------------------------------------------------------------
+TradeLite can work with db2 or derby_mysql. 
+You can set TradeDirec.java (boolean isDerby_Mysql = true or false)
+
+	// isDerby_Mysql = true, run on derby or mysql. 
+    // isDerby_Mysql = false, run on db2
+
+
+notes: 
+Third party libraries: com.ibm.json_1.0.1.jar; derbyclient.jar(if you are using system variable way to connect to derby)
+
+Run this aplicaiton with http://localhost:<port>/<context-root>
+
+Local: http://localhost:9080/TradeLite/
+
+
+
+
