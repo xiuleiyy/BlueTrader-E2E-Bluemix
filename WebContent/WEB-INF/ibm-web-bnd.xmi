@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1093969262751" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_1"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1093969262751" jndiName="jdbc/TradeDataSource" loginConfigurationName="DefaultPrincipalMapping">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1"/>
+    <properties xmi:id="Property_1094235896785" name="com.ibm.mapping.authDataAlias" value="TradeDataSourceAuthData" description="container-managed auth alias from resource-ref"/>
+  </resRefBindings>
+</webappbnd:WebAppBinding>
