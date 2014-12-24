@@ -7,7 +7,7 @@ There is a Chinese Blog that you can follow to run this application, the link is
 http://blog.csdn.net/acostry/article/details/42107551
 
 
-Step bu Step for English
+Step by Step for English
 ==================================
 
 1. Dowload installableWar/BlueTrader.war to your local machine
