@@ -3,8 +3,8 @@ BlueTrader-E2E-Bluemix
 
 A Trade application running on Bluemix, bind with SQLDB, AutoScaling and Monitor and Analitics
 
-There is a Chinese Blog that you can follow to run this application, the link is:
-http://blog.csdn.net/acostry/article/details/42107551
+There is a Chinese paper that you can follow to run this application, the link is: will update later
+
 
 
 Step by Step for English
